@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDynamicFormApp", "CreateDynamicFormApp\CreateDynamicFormApp.csproj", "{CCEDD45C-48FD-481B-9782-07037A9882D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTest", "AppTest\AppTest.csproj", "{35F72D24-EA79-42B6-8801-63AFC0D8A5AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCEDD45C-48FD-481B-9782-07037A9882D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEDD45C-48FD-481B-9782-07037A9882D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEDD45C-48FD-481B-9782-07037A9882D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEDD45C-48FD-481B-9782-07037A9882D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F72D24-EA79-42B6-8801-63AFC0D8A5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F72D24-EA79-42B6-8801-63AFC0D8A5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F72D24-EA79-42B6-8801-63AFC0D8A5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F72D24-EA79-42B6-8801-63AFC0D8A5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

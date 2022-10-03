@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row mt-2">
+<form >    
+<div class="card">
+<h5 class="card-title">Input The Json </h5>    
+  <div class="card-body">
+        <div class="form-floating">
+        <textarea class="form-control" name="JsonFormatInput" placeholder="Leave a comment here" id="jsonFormat" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Json Object</label>
+        </div>
+  </div>
+
+  <div class="card-footer text-center">
+        <button  id="btnGen" type="button" class="btn btn-primary" >Primary</button>
+  </div>
+
+</div>
+</form>
+</div>
+
+
+      <br>
+
+
+      <div class="container text-center">
+           <div class="row justify-content-md-center">
+                  <div class="col-8 pa-2">
+                        <div class="card w-75 pa-2">
+                             <h5 class="card-title"> Generated Form Display Here </h5>    
+                             <div class="card-body" id="htmplGenerated">
+                             
+                             </div>
+
+                         </div>
+
+                  </div>
+        </div>
+        
+     </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnGen").click(function () {
+            var json = $("#jsonFormat").val();  
+            if(!isJsonString(json)){
+               alert("Please Input The Valid Json Synatx");
+                  return;
+            }
+
+             var jsondata = { JsonFormatInput : json };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/CreateForm",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    data:  JSON.stringify(jsondata),
+                    success: function (response) {
+                        $('#htmplGenerated').append("<a href='/Home/Privacy?fileName="+response+"'> Click To Share Link </a>");
+
+            alert("success")
+                        alert("Hello: " + response + " .\nCurrent Date and Time: " + response);
+                    },
+                    failure: function (response) {
+                        $('#htmplGenerated').append("<a href='/Home/Privacy?fileName="+response.responseText+"'> Click To Share Link </a>");
+
+                    },
+                    error: function (response) {
+             window.location.href = "/Home/Privacy?fileName=" + response.responseText;
+                        $('#htmplGenerated').append(response.responseText);
+                   }
+                });
+            });
+
+            function isJsonString(str) {
+            try {
+            JSON.parse(str);
+            } catch (e) {
+            return false;
+            }
+            return true;
+            }            
+        });
+    </script>
+
+

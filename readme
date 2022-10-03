@@ -1,0 +1,16 @@
+
+to run the project follow this command 
+$cd CreateDynamicFormApp      /// to Change Directory
+
+$dotnet build  //// To download The PAckage 
+
+$dotnet run // To Run The Appliaion With watch option to be As Devlopment
+
+
+// To Run The Test Project 
+
+$cd AppTest   // change Directory Sure Are u in root path
+
+$dotnet Test
+
+

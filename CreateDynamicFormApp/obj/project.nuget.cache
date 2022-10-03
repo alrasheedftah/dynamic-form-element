@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5LA1zDtePe3LzzKpOgKAO7pGer42LJkxQTZmKcYHt90CiSgQvtfVrsBPH2Rx/vjRaPZ3vRxMI5+GEKQZEYnkow==",
+  "success": true,
+  "projectFilePath": "/home/alrasheed/Desktop/MyPro/TaskAndTests/shareqaProject/CreateDynamicFormApp/CreateDynamicFormApp.csproj",
+  "expectedPackageFiles": [
+    "/home/alrasheed/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
